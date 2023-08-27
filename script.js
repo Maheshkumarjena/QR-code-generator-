@@ -31,7 +31,7 @@ function generateQRCode() {
         qrImage.onerror = (error) => {
             reject(error);
         };
-        qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example=${srcMain}`;
+        qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${srcMain}`;
     });
 }
 
