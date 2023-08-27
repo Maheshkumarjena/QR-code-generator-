@@ -23,7 +23,7 @@ function generateQRCode() {
             reject(new Error("Input value is missing."));
             return;
         }
-
+ 
         let qrImage = new Image();
         qrImage.onload = () => {
             resolve(qrImage);
